@@ -152,5 +152,7 @@ class FavouritesFragment : Fragment() {
 
     private fun function1(text: String){
         Toast.makeText(requireContext(), text, Toast.LENGTH_LONG).show()
+
+        adapter.notifyDataSetChanged()
     }
 }
